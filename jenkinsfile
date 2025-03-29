@@ -4,11 +4,6 @@ pipeline {
         nodejs 'Node'
     }
     stages {
-        stage('Clone Repository') {
-            steps {
-                bat 'git clone https://github.com/DEEP-666/Test01.git'
-            }
-        }
         stage('Install Dependencies') {
             steps {
                 bat 'npm install'
